@@ -1,0 +1,20 @@
+catalog_name: nfleming
+database_name: sgws
+volume_name: entity_resolution
+
+resolved_entity_path: /Volumes/nfleming/sgws/entity_resolution/dataset2.csv
+unresolved_entity_path: /Volumes/nfleming/sgws/entity_resolution/dataset1.csv
+
+resolved_entity_table: nfleming.sgws.resolved_entity_chunked
+
+vector_search_endpoint_name: one-env-shared-endpoint-12
+vector_search_index_name: nfleming.sgws.resolved_entity_chunked_index
+
+primary_key: id
+embedding_source_column: content
+
+
+#chat_model_name: gpt-4o-mini
+chat_model_name: databricks-meta-llama-3-3-70b-instruct
+
+embedding_model_name: databricks-gte-large-en
